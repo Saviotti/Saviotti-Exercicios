@@ -1,2 +1,2 @@
 # Saviotti-Exercicios
-Novo repositório para estudo
+Branch para formulação do Portifólio
