@@ -1,2 +1,2 @@
 # Saviotti-Exercicios
-Novo repositório para estudo
+Exercicios 3.4 - CSS e HTML Semântico
