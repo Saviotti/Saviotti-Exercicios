@@ -1,1 +1,66 @@
-pratica 1
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1 class="display-4 text-muted">Formulário</h1>
+    <form action="" method="GET" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="nome-completo">Nome Completo:</label>
+            <input class="form-control" type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="input-email">E-mail:</label>
+            <input class="form-control" type="email" name="email" id="input-email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div>
+            <label for="">Estado onde você mora</label>
+            <select class="form-control" name="estado" id="input-estado">
+                <option value="sp">São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="pr">Paraná</option>
+            </select>
+        </div>
+        <br>
+        <p>Selecione sua foto:</p>
+        <input class="form-control btn btn-warning" type="file" name="foto" id="foto-perfil">
+    <br>
+    <p>Comidas favoritas:</p>
+    <label for="comida1">
+        <input class="form-control" type="radio" id="comida1" name="comida-favorita" value="pizza" checked>Pizza
+    </label>
+    <label for="comida2">
+        <input class="form-control" type="radio" id="comida2" name="comida-favorita" value="pastel">Pastel
+    </label>
+    <label for="comida3">
+        <input class="form-control" type="radio" id="comida3" name="comida-favorita" value="Sushi">Sushi
+    </label>
+    <label for="comida4">
+        <input class="form-control" type="radio" id="comida4" name="comida-favorita" value="Outro">Outro
+    </label>
+        <br>
+        <br>
+    <p>Escreva algo sobre você:</p>
+    <textarea class="form-control" name="sobre-mim" id="textarea-1" cols="30" rows="5"></textarea>
+    <br>
+    <p>Digite sua senha:</p>
+    <label for="input-senha">
+        <input class="form-control"  type="password" name="senha" id="input-senha" required>
+        </label>
+    <br>
+    <label for="">
+        <input class="form-control" type="checkbox" name="promocoes" id="checkbox-noticias">Deseja receber notícias e promoções?
+    </label>
+    <br>
+    <button class="btn btn-success" type="submit">Enviar Formulário</button>
+</form>
+</body>
+</html>
