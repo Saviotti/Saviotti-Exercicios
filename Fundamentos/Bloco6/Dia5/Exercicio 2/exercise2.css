@@ -5,3 +5,34 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  @media screen and (max-width:  500px) {
+    body {
+      background-color: aquamarine;
+    }
+    .container {
+      flex-direction: column;
+    }
+    p {
+      padding: 0 5px;
+      line-height: 1.5em;
+    }
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 1080px) {
+    body {
+      background-color:chartreuse ;
+    }
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width:  1080px) {
+    body {
+      background-color:darksalmon;
+    }
+    .container {
+      flex-wrap: nowrap;
+    }
+  }
