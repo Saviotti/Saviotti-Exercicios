@@ -72,5 +72,8 @@ const nameAndAge = books.map((book) => ({
 
 // console.log(nameAndAge);
 
+const fantasyOrScienceFiction = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
+// console.log(fantasyOrScienceFiction);
+
 
 
