@@ -75,5 +75,13 @@ const nameAndAge = books.map((book) => ({
 const fantasyOrScienceFiction = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
 // console.log(fantasyOrScienceFiction);
 
+function oldBooksOrdered () {
+    // const currentYear = [2022];
+    const currentYear = new Date().getFullYear();
+    return books.filter((book) => (
+        book.releaseYear < currentYear - 60)).sort((a, b) => a.releaseYear - b.releaseYear);
+};
+// console.log(oldBooksOrdered());
 
-
+const fantasyOrScienceFictionAuthors = books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia').map((element) => element.author.name).sort();
+// console.log(fantasyOrScienceFictionAuthors);
